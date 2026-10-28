@@ -158,7 +158,7 @@ function TopHeader() {
   return (
     <div
       className={`relative w-full border-b border-slate-200/70 bg-slate-50 ${
-        isLanguageMenuOpen ? "z-50" : "z-10"
+        isLanguageMenuOpen || showSuggestions ? "z-50" : "z-10"
       }`}
     >
       <div className="hidden h-8 items-center justify-center bg-slate-900 px-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-white sm:flex">
@@ -224,7 +224,7 @@ function TopHeader() {
               id="product-search-suggestions"
               role="group"
               aria-label={t("productSuggestions")}
-              className="absolute inset-x-0 top-full z-70 mt-2 overflow-hidden rounded-xl border border-slate-200 bg-white p-2 shadow-xl shadow-slate-900/15"
+              className="absolute inset-x-0 top-full z-50 mt-2 overflow-hidden rounded-xl border border-slate-200 bg-white p-2 shadow-xl shadow-slate-900/15"
             >
               {suggestionStatus === "loading" && (
                 <p role="status" className="px-3 py-3 text-sm text-slate-500">
