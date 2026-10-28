@@ -41,7 +41,7 @@ function HeroSlider() {
   const { t, i18n } = useTranslation();
 
   return (
-    <section className="mx-auto w-full max-w-[1440px] select-none px-3 pb-8 pt-5 sm:px-6 sm:pb-12 sm:pt-8 lg:px-10">
+    <section className="mx-auto w-full max-w-360 select-none px-3 pb-8 pt-5 sm:px-6 sm:pb-12 sm:pt-8 lg:px-10">
       <Swiper
         key={i18n.language}
         modules={[Autoplay, Pagination]}
@@ -53,11 +53,11 @@ function HeroSlider() {
           pauseOnMouseEnter: true,
         }}
         pagination={{ clickable: true }}
-        className="overflow-hidden rounded-[1.5rem] shadow-2xl shadow-slate-900/15 sm:rounded-[2rem] [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet]:opacity-60 [&_.swiper-pagination-bullet-active]:bg-lime-300 [&_.swiper-pagination-bullet-active]:opacity-100"
+        className="overflow-hidden rounded-3xl shadow-2xl shadow-slate-900/15 sm:rounded-4xl [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet]:opacity-60 [&_.swiper-pagination-bullet-active]:bg-lime-300 [&_.swiper-pagination-bullet-active]:opacity-100"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <article className="relative h-[32rem] overflow-hidden bg-[#182c23] sm:h-[36rem] lg:h-[39rem]">
+            <article className="relative h-128 overflow-hidden bg-[#182c23] sm:h-144 lg:h-156">
               <img
                 src={slide.image}
                 alt={t(slide.altKey)}

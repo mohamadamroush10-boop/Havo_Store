@@ -176,7 +176,7 @@ function TopHeader() {
         >
           <span
             className={`inline-flex items-center justify-center ${
-              theme === "dark" ? "rounded-lg bg-[#f7f6f1] p-1" : ""
+              theme === "dark" ? "rounded-lg bg-slate-50 p-1" : ""
             }`}
           >
             <img
