@@ -1,4 +1,4 @@
-# Reda Store
+# Havo Store
 
 A responsive React storefront with English, Turkish, and Arabic interfaces, RTL
 support, persistent cart and favorites, and light and dark themes.
